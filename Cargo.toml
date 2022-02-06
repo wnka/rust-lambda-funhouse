@@ -1,0 +1,14 @@
+[package]
+name = "rust-lambda"
+version = "0.1.0"
+edition = "2021"
+
+# Binary needs to be named "bootstrap" since custom runtime will look for /var/task/bootstrap
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
+
+[dependencies]
+lambda_runtime = "0.4.1"
+serde_json = "1"
+tokio = "1"
