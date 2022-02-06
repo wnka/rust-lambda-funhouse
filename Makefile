@@ -31,7 +31,7 @@ zip-lambda-x86: lambda-arm
 build:
 	cargo build $(release)
 
-all: build zip-lambda-arm
+all: build zip-lambda-arm zip-lambda-x86
 
 clean:
 	cargo clean
