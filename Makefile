@@ -24,7 +24,7 @@ zip-lambda-arm: lambda-arm
 lambda-x86:
 	cargo build $(release) --target x86_64-unknown-linux-musl
 
-zip-lambda-x86: lambda-arm
+zip-lambda-x86: lambda-x86
 	mkdir -p zip
 	zip -j zip/lambda-x86.zip target/x86_64-unknown-linux-musl/$(target)/bootstrap
 
